@@ -5,7 +5,7 @@
 <!--JoAnne Obata October 24, 2012   /notes.html -->
 <head>
    <title>Notes - JoAnne's CISW 304 Website</title>
-   <link href="style.css" type="text/css" rel="stylesheet" />
+   <link href="css/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 <div id="container"><!--start #container-->
@@ -19,7 +19,7 @@
         <li><a href="resources.html">Resources</a><span>My resources</span></li>
         <li><a href="notes.html">Notes</a><span>My notes</span></li>
         <li><a href="assignments.html">Assignments</a><span>My assignments</span></li>
-        <li><a rel="external nofollow" href="final.html">Final Project</a><span>My final project</span></li>
+        <li><a rel="external nofollow" href="week8/final.html">Final Project</a><span>My final project</span></li>
     </ul>
 </div><!--End #navigation -->
 <div id="content"><!--Start #content -->
@@ -42,7 +42,17 @@
             <p><strong>IMPORTANT:</strong> When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add the padding, borders and margins.</p>
 
             <h3>Browsers Compatibility Issue</h3>
-            <p>IE8 and earlier versions of IE, included padding and border in the width property. To fix this problem, add a &lt;!DOCTYPE html&gt; to the HTML page.</p> 
+            <p>IE8 and earlier versions of IE, included padding and border in the width property. To fix this problem, add a &lt;!DOCTYPE html&gt; to the HTML page.</p>
+            <a id="links"><h2>Links</h2></a>         
+            <h3>Server Path...	What it means...</h3>
+            <ul class="assignments">
+                  <li><span>&lt;a href="page.html"&gt;	 means page.html is located in the current directory.</span></li><br />
+                  <li><span>&lt;a href="tips/page.html"&gt; means page.html is located in a folder (directory) called tips. The "tips" folder is located in the current directory.</span></li><br />
+                  <li><span>&lt;a href="tips/other/page.html"&gt;	means page.html is located in a folder called other that is located in a folder called tips that is located in the current directory.</span></li><br />
+                  <li><span>&lt;a href="../page.html"&gt;	 means page.html is located in a folder one level up from the current directory.</span></li><br />
+                  <li><span>&lt;a href="../../page.html"&gt; means page.html is located in a folder two levels up from the current directory.</span></li><br />
+            </ul>
+            
     </div><!--End #notes--> 
 </div><!--End #content-->
 <div id="footer"><!--Start #footer--> 

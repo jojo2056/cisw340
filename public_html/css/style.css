@@ -26,6 +26,7 @@ ul.vertical li a{background:-webkit-gradient(linear, left top, left bottom, from
 ul.vertical li a:hover{background:transparent none;}
 /* Content */
 #content{float:left;width:40.0em;padding:1.0em;}
+#content.project2 {float:left;width:97%;padding:1.0em;}
 /* Lists for Assignments and Resources */
 ul.assignments.fl, ul.resources.fl{list-style-type:none;margin:0px;padding:0px;}
 .assignments li span, .assignments a, .resources a{display:block;color:#6c7bff;font-size:1.0em;text-decoration:none;text-align:left;border:none;line-height:normal;}
@@ -35,12 +36,64 @@ ol.resources.main{list-style-type:decimal;color:#6c7bff;}
 .assignments li span strong{color:#bbb;}
 /* Footer */
 #footer{font-family:Georgia, "Times New Roman", Times, serif;font-size:1.0em;border-top:1px solid #666;text-align:center;padding:7px 0;clear:both;color:#ccc;}
-/* Project 2 Pseudo Class */
-a.project2:link {color:#FF0000;}    /* unvisited link */
-a.project2:visited {color:#900000;} /* visited link */
-a.project2:hover {color:#FF00FF;}   /* mouse over link */
-a.project2:active {color:#0000FF; border: none;}  /* selected link */
-a.project:link {color:#fff;}    /* unvisited link */
-a.project:visited {color:#000;} /* visited link */
-a.project:hover {color:#bbb;}   /* mouse over link */
-a.project:active {color:#666;}  /* selected link */
+/* Project 2 Pseudo-classes: link, visited, hover and active */
+a.project2:link {color:#FF0000;}    /* unvisited link - red */
+a.project2:visited {color:#00FF00;} /* visited link - green*/
+a.project2:hover {color:#FF00FF;}   /* mouse over link - pink*/
+a.project2:active {color:#0000FF; border: none;}  /* selected link  - blue*/
+/* Project 2 Pseudo-Element*/
+.block {display: block;}
+p.element:first-letter {font-family: cursive; font-size:300%; color:#8A2BE2;}
+p.element:first-line {color: #6c7bff; font-size: 200%;}
+p.element span { font-weight: bold; text-transform: uppercase }
+/* Add some spacing */
+ul, div.project2, img.project2 { margin-bottom: 10px;}
+/* Default block styles */   
+div.test2 {padding: 10px; border: 1px solid #eaeaea;-moz-border-radius: 5px; border-radius: 5px;}
+/* Change its appearance when it's matched */    
+div.test2:target{border-color: #6c7bff; -moz-box-shadow: 0 0 4px #9c9c9c; -webkit-box-shadow: 0 0 4px #9c9c9c; box-shadow: 0 0 4px #9c9c9c;}
+/* Default block styles */
+div.project2 {padding: 10px;-moz-border-radius: 5px; border-radius: 5px;}
+/* Change its appearance when it's matched */    
+div.project2:target{border-color: #6c7bff; -moz-box-shadow: 0 0 4px #9c9c9c; -webkit-box-shadow: 0 0 4px #9c9c9c; box-shadow: 0 0 4px #9c9c9c;}
+/* Default block styles */   
+img.project2 {padding: 10px; border: 1px solid #fff;-moz-border-radius: 5px; border-radius: 5px;}
+/* Change its appearance when it's matched */    
+img.project2:target{border: 1px solid #6c7bff; -moz-box-shadow: 0 0 4px #9c9c9c; -webkit-box-shadow: 0 0 4px #9c9c9c; box-shadow: 0 0 4px #9c9c9c;}
+
+/* Main table P2 */
+table {width: 98%}
+/* Structureal Pseudo Code */
+
+#sampletable td {color:#000; border: 1px solid #000}
+#sampletable th {background-color: silver;}
+#sampletable tr:nth-of-type(odd) {background-color: lightyellow;} /*odd rows*/
+#sampletable tr:nth-of-type(even) {background-color: lightblue;} /*even rows*/
+#sampletable tr>td:first-of-type {font-weight: bold;} /*first cell of each row*/
+                                                       
+.wrapper {
+    overflow:hidden;
+    width:930px;
+}
+.wrapper div {
+    /* any width up to (total img width) * (num_columns) */
+    /* the rest will be chopped off by overflow:hidden */
+    width:330px;
+    
+    /* chops off top "padding" of inner div (first row imgs top margin) */
+    margin-top:-13px; 
+}
+img.project2 {
+    width:100px;
+    height:75px;
+    float:left;
+    margin:10px 10px 0 0;
+}
+
+/* decoration */
+img.project2 {
+     background:white;   
+}
+.wrapper {
+    background:white;
+}                                                       

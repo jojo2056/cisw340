@@ -43,8 +43,8 @@ a.project2:hover{color:#5912E6;}
 a.project2:active{color:#0000FF;border:none;}
 /* Pseudo Element */
 .block{display:block;}
-p.element:first-letter{font-family:cursive;font-size:300%;color:#8A2BE2;}
-p.element:first-line{color:#6c7bff;font-size:200%;}
+p.element::first-letter{font-family:cursive;font-size:300%;color:#8A2BE2;}
+p.element:first-child::first-line{color:#6c7bff;font-size:200%;}
 p.element span{font-weight:bold;text-transform:uppercase}
 #pseudocode p{color:#222;margin:0 100px;}
 ul, div.project2, img.project2{margin-bottom:10px;}

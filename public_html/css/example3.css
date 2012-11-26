@@ -1,0 +1,148 @@
+/* style.css for JoAnne O. CISW 304 */
+/* Main Typography */
+body, html{
+	font-family: Georgia, serif;
+	font-size:16px;
+	height:100%;
+}
+h2{
+margin:11px 0;
+font-family: 'Cabin', sans-serif;
+font-weight:bold;
+text-transform:uppercase;
+border-bottom: 1px solid #999999;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.wrapper{
+	background-color:#fff;
+	width:960px;
+	margin:0 auto;
+	padding:0 10px;
+	min-height:100%;
+}
+.header{
+	font-size:80px;
+	font-family: UnifrakturMaguntia;
+	text-align:center;
+	margin-bottom:11px;
+	padding: 30px 0 10px;
+}
+#header.newspaper_banner {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+.main2 img {
+    padding-top: 10px;
+}
+.nav, .footer{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	margin-bottom:22px;
+}
+.nav li{
+	display:inline-block;
+	padding:10px;
+
+}
+.nav li a{
+font-family: 'Cabin', sans-serif;
+font-weight:bold;
+color:#333333;
+text-transform:uppercase;
+}
+.main, .main2, .main3{
+	padding: 10px;
+}
+.main p, .main2 p,.main3 p{
+	color:#707070;
+        margin: 11px 0;
+        text-align: justify;
+        text-indent:20px;
+}
+
+.main p+p, .main2 p+p,.main3 p+p{
+        text-indent:20px;
+}
+.main{
+        columns:300px 3;
+        -webkit-columns:300px 3; /* Safari and Chrome */
+        -moz-columns:300px 3; /* Firefox */
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px; 
+	-webkit-column-rule: 1px dotted #999999;
+	-moz-column-rule: 1px dotted #999999;
+	column-rule: 1px dotted #999999;
+}
+.main2{
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px; 	
+	-webkit-column-rule: 1px dotted #999999;
+	-moz-column-rule: 1px dotted #999999;
+	column-rule: 1px dotted #999999;
+}
+.main2 h2{
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span:all;
+}
+		
+
+.footer p{
+	padding:10px;
+	text-align:center;
+}
+.footer a{
+	color:#000;
+}
+@font-face {
+    font-family: 'PTSansNarrowBold';
+    src: url('fonts/PTSans/PTN77F-webfont.eot');
+    src: url('fonts/PTSans/PTN77F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/PTSans/PTN77F-webfont.woff') format('woff'),
+         url('fonts/PTSans/PTN77F-webfont.ttf') format('truetype'),
+         url('fonts/PTSans/PTN77F-webfont.svg#PTSansNarrowBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1.fontface {font: 60px/68px 'PTSansRegular', Arial, sans-serif;letter-spacing: 0;}
+h2.fontface {font: 'PTSansRegular', Arial, sans-serif;letter-spacing: 0;}
+
+		p.style1 li.style1{font: 18px/27px 'PTSansNarrowRegular', Arial, sans-serif;}
+		p.style2 {font: 10px/20px 'PTSansCaptionBold', Arial, sans-serif;}
+		p.style3 {font: 18px/27px 'PTSansCaptionRegular', Arial, sans-serif;}
+		p.style4 {font: 18px/27px 'PTSansBoldItalic', Arial, sans-serif;}
+		p.style5 {font: 18px/27px 'PTSansBold', Arial, sans-serif;}
+		p.style6, li.style6 {font: 18px/27px 'PTSansItalic', Arial, sans-serif;}
+		p.style7, li.style7 {font: 14px/20px 'PTSansRegular', Arial, sans-serif;}
+		p.style8 {font: 18px/27px 'PTSansNarrowBold', Arial, sans-serif;}
+                
+@font-face {
+    font-family: 'DeutschGothicNormal';
+    src: url('fonts/DeutschGothic/Deutsch-webfont.eot');
+    src: url('fonts/DeutschGothic/Deutsch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DeutschGothic/Deutsch-webfont.woff') format('woff'),
+         url('fonts/DeutschGothic/Deutsch-webfont.ttf') format('truetype'),
+         url('fonts/DeutschGothic/Deutsch-webfont.svg#DeutschGothicNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+      
+        h1.fontfaceg a{font: 80px/88px 'DeutschGothicNormal', Arial, sans-serif;letter-spacing: 0;color: #fff;text-shadow: 2px 3px 0 #000, 0 1px 0 #fff;text-align: center;-webkit-text-stroke: 1px black;}
+	h1.fontfaceg {text-align: center;}
+
+        p.style1g {font: 18px/27px 'DeutschGothicNormal', Arial, sans-serif;}
+
